@@ -1,0 +1,151 @@
+body {
+	font-size: 120%;
+	font-family: "Maven Pro", sans-serif;
+	height: 100%;	
+}
+
+/*
+=================================
+		GERAL
+=================================
+*/
+
+body, main, html {
+	height: 100%;
+}
+
+/*
+=================================
+			HEADER
+=================================
+*/
+.cabecalho-conteudo {
+	margin: auto;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 12em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	background-color: #D05200;
+}
+
+.logo-cabecalho {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.menu-principal ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-principal ul li {
+	padding: 0.5em 0.5em;
+}
+	
+
+.menu-principal ul li:hover, .menu-principal ul li:focus {
+	color: rgba(0,0,0,.3);
+}
+
+/*
+=================================
+			Main
+=================================
+*/
+
+main .container {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+/*~~~~~~~~~~~~Parte Fixa~~~~~~~~~~~~*/
+
+.conteudo-fixo {
+	
+	position: relative;
+	padding: 4.04166666em 12em;
+	line-height: 1.6;
+	background-color: #4F4546;
+	z-index: 2;
+	color: white;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+.conteudo-fixo::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+article h2 {
+	font-size: 200%;
+	margin-top: 1em;
+}
+
+article p {
+	font-size: 130%;
+}
+
+article p~p {
+	margin-top: 0.5em;
+}
+
+/*~~~~~~~~~~~~Parte Movel~~~~~~~~~~~~*/
+
+.imagem-movel {
+	position: relative;
+	height: 30em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1;
+	
+}
+
+.imagem-movel h1 {
+  	position: relative;
+  	height: 10em;
+  	background-color: rgba(208, 82, 0, 0.3);
+  	text-align: center;
+  	display: flex;
+  	justify-content: space-around;  	
+  	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  	padding: 3.5em 0em;
+  	box-sizing: border-box;
+  	color: white;
+  	z-index: 1;
+  	font-size: 350%;
+}
+
+.filtro {
+	
+	height: 15em;
+}
+
+.imagem-movel .primeiro {
+	margin-top: 1em;
+	
+}
+
+.fundo-movel-a {
+	background-image: url("../imagens/imagem1.jpg");
+}
+
+.fundo-movel-b {
+	background-image: url("../imagens/imagem2.jpg");
+}
+
+.fundo-movel-c {
+	background-image: url("../imagens/imagem3.jpg");
+}
+
+.fundo-movel-d {
+	background-image: url("../imagens/imagem4.jpg");
+}
